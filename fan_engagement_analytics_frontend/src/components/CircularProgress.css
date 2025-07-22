@@ -1,0 +1,29 @@
+.circular-progress-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.circular-bg {
+  fill: none;
+  stroke: var(--border-color);
+}
+
+.circular-bar {
+  fill: none;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.7,0.3,0.8,0.1);
+}
+
+.circular-progress-label {
+  font-size: 0.97rem;
+  margin-top: 2px;
+  color: var(--text-secondary);
+}
+
+.circular-progress-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent, #f59e42);
+}

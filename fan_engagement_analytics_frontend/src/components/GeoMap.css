@@ -1,0 +1,29 @@
+.geomap-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 160px;
+}
+
+.geomap-placeholder {
+  background: var(--bg-primary);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.11);
+  color: var(--text-primary);
+  padding: 22px 18px;
+  text-align: center;
+  width: 100%;
+  min-height: 160px;
+}
+
+.geomap-placeholder ul {
+  margin-top: 9px;
+  color: var(--text-secondary);
+  list-style: square inside;
+  font-size: 0.98rem;
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}

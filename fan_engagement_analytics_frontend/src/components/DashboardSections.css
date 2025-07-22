@@ -1,0 +1,33 @@
+.dashboard-sections-root {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 1.2rem;
+}
+
+.dashboard-section {
+  width: 100%;
+}
+
+/* Grid for cards/charts within a panel */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 22px;
+  width: 100%;
+  padding: 6px 2px 3px 2px;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

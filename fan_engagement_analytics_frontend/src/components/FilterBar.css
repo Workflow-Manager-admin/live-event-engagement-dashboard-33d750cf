@@ -1,0 +1,65 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--bg-secondary);
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  margin-bottom: 20px;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+}
+
+.filter-group label {
+  font-size: 0.96rem;
+  color: var(--text-primary);
+}
+
+.filter-group input,
+.filter-group select {
+  margin-left: 6px;
+  font-size: 1rem;
+  padding: 4px 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.refresh-btn {
+  margin-left: 12px;
+  padding: 8px 16px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(30,30,34,0.10);
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.refresh-btn:hover,
+.refresh-btn:focus {
+  background: var(--accent, #f59e42);
+  color: #222;
+}
+
+@media (max-width: 800px) {
+  .filter-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .refresh-btn {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 4px;
+  }
+}

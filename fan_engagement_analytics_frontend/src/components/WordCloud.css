@@ -1,0 +1,22 @@
+.wordcloud-root {
+  width: 100%;
+  min-height: 73px;
+  padding: 8px 0;
+  color: var(--accent, #f59e42);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.wordcloud-word {
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  transition: font-size 0.3s;
+}
+
+@media (max-width: 600px) {
+  .wordcloud-root {
+    font-size: 12px;
+  }
+}

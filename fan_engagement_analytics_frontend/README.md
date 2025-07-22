@@ -1,82 +1,51 @@
-# Lightweight React Template for KAVIA
+# Fan Engagement Analytics Dashboard – React Frontend
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+This project implements a responsive, modern React dashboard for displaying and analyzing 16 key fan engagement metrics for live event platforms.
 
 ## Features
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- **Display of 16 key engagement metrics**
+    - Cards, bar charts, circular progress, device breakdown bars, word cloud, heatmap, geo map
+- **Filters**
+    - Date range, event name, poll type, device type
+- **3-Section Grid Layout**
+    - _Poll Metrics_, _Viewer Engagement_, _System Insights_
+    - Collapsible sections for better mobile use
+- **Interactive Visualizations**
+    - Placeholder for map, heatmap, and word cloud (ready for REST/GraphQL data integration)
+- **Theme**
+    - Modern, minimalistic dark/light toggle, KAVIA brand color palette
+- **Responsive Design**
+    - Grid cards auto-stack for mobile view
+
+## Custom Components
+
+- `FilterBar` – Top of dashboard, interactive filtering
+- `DashboardCard` – Modern card container for metrics/charts
+- `CollapsiblePanel` – Collapsible/grouped dashboards
+- `BarChart` – Bar chart using pure React/CSS
+- `CircularProgress` – Circular rate/progress charts
+- `DeviceBreakdownChart` – Horizontal device bars
+- `GeoMap` – Placeholder for geo breakdown
+- `HeatMap` – Activity heatmap of engagement/session
+- `WordCloud` – Tag cloud of freeform engagement
 
 ## Getting Started
 
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000/).
 
 ### `npm run build`
+Builds the app for production.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API/Data Integration
 
-## Customization
+All metric visualizations use mock (static) data by default. Connect REST/GraphQL endpoints for live data by replacing corresponding parts in `App.js` and components.
 
-### Colors
+## Theme & UI
 
-The main brand colors are defined as CSS variables in `src/App.css`:
+Modify colors in `src/App.css`. All components styled with minimal CSS and dark theme support.
 
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
